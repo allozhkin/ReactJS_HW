@@ -1,9 +1,9 @@
 function AboutPage() {
   return (
     <>
-      <h1>О нас</h1>
+      <h1>Abot page</h1>
     </>
   );
-}
-
+}   
+ 
 export default AboutPage;
