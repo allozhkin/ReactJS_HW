@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+form input,
+form button {
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+form button {
+  cursor: pointer;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin: 1em 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.product-item button {
+  cursor: pointer;
+  margin-left: 1em;
+}
+
