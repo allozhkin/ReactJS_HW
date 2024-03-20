@@ -1,0 +1,167 @@
+@media(min-width:768px) and (max-width:1139px) {
+    .center {
+        @include centerContent(736px);
+    }
+
+
+    .top {
+        min-height: 363px;
+        margin-bottom: 64px;
+
+        &__left {
+            max-width: 50%;
+
+        }
+
+        &__right {
+            padding-top: 148px;
+            flex-wrap: nowrap;
+
+        }
+    }
+
+
+    .topic {
+        margin-left: 8px;
+
+        &__title {
+            font-size: 44px;
+        }
+
+        &__sub {
+            gap: 6px;
+
+            &__subtitle1 {
+                font-size: 24px;
+            }
+
+            &__subtitle2 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .items {
+        gap: 19px;
+        margin-bottom: 109px;
+
+    }
+
+    .item {
+        max-width: 232px;
+        min-height: 168px;
+
+        &__long {
+            max-width: 735px;
+            min-height: 116px;
+        }
+    }
+
+    .heading {
+        margin-bottom: 73px;
+
+        &__txt {
+            text-align: center;
+        }
+    }
+
+    .product-box {
+        margin-bottom: 61px;
+        gap: 16px;
+
+        .product-hide {
+            display: none;
+        }
+    }
+
+    .advertisments {
+        min-height: 610px;
+        flex-direction: column;
+
+    }
+
+    .advertisment {
+        text-align: center;
+        max-width: 360px;
+    }
+
+    .subscribe {
+        min-height: 696px;
+        gap: 48px;
+        flex-direction: column;
+    }
+
+    .footer {
+        align-items: center;
+        gap: 40px;
+    }
+
+    .filter-sort {
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+
+    .product-description__box {
+        top: 0;
+        width: 100%;
+    }
+
+    .top-head {
+        gap: 363px;
+    }
+
+    .cart {
+        flex-wrap: wrap;
+        gap: 64px;
+
+        &__buttons {
+            justify-content: space-around;
+        }
+
+        &__right {
+            width: 100%;
+
+            &_box {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+
+        }
+
+        &__forms {
+            width: 50%;
+        }
+
+    }
+
+    .registration {
+        gap: 22px;
+
+        &-left {
+            width: 50%;
+        }
+
+        &-right {
+            max-width: 50%;
+
+            &__title {
+                @include registrationTextStyle(16px);
+                margin-bottom: 32px;
+            }
+
+            &__text {
+                @include registrationTextStyle(16px);
+                margin-bottom: 22px;
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                list-style-type: none;
+                @include registrationTextStyle(16px);
+            }
+        }
+    }
+}

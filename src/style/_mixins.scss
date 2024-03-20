@@ -1,0 +1,31 @@
+@mixin centerflex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin centerContent($siteWidth) {
+    padding-left: calc(50% - $siteWidth/2);
+    padding-right: calc(50% - $siteWidth/2);
+}
+
+@mixin buttonScale () {
+    transform: scale(1.04);
+    transition: transform .2s;
+}
+
+@mixin buttonStyle () {
+    cursor: pointer;
+    outline: inherit;
+    transition: transform .2s;
+}
+
+@mixin registrationTextStyle($fontSize) {
+    color: #000;
+    font-family: Lato;
+    font-size: $fontSize;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}

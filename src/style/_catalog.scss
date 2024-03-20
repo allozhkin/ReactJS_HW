@@ -1,0 +1,234 @@
+.box-content {
+  height: 100vh;
+  overflow: scroll;
+}
+
+.top-head {
+  background: #f8f3f4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  gap: 768px;
+
+  &__heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorSelectSite;
+  }
+
+  .breadcrumbs__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+
+    &:not(:last-child)::after {
+      content: " /";
+    }
+
+    &:hover {
+      color: $colorSelectSite;
+    }
+
+    &:last-child {
+      font-weight: 700;
+      color: $colorSelectSite;
+    }
+  }
+}
+
+.filter-sort {
+  padding-bottom: 65px;
+  padding-top: 39px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  gap: 305px;
+
+  .filter {
+    padding-top: 13px;
+
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+
+    &__content {
+      width: 360px;
+      position: absolute;
+      background-color: #fff;
+      padding: 0px 16px 16px;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] {
+      background: #fff;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] .filter__heading {
+      color: $colorSelectSite;
+    }
+
+    &[open] path {
+      fill: $colorSelectSite;
+    }
+
+    &__summary {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding-left: 16px;
+      width: 89px;
+
+      &:hover path {
+        fill: $colorSelectSite;
+      }
+
+      &:hover .filter__heading {
+        color: $colorSelectSite;
+      }
+    }
+
+    &__heading {
+      color: $colorText;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 17px;
+    }
+
+    &__item {
+      margin-top: 16px;
+    }
+
+    &__head {
+      color: #6f6e6e;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 17px;
+      padding: 8px 11px 11px 11px;
+      border-bottom: 1px solid #ebebeb;
+      border-left: 5px solid $colorSelectSite;
+    }
+
+    &__link-box {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      padding: 24px 16px;
+    }
+
+    &__link {
+      color: #6f6e6e;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 17px;
+
+      &:hover {
+        color: $colorSelectSite;
+      }
+    }
+
+    &__item[open] .filter__head {
+      color: $colorSelectSite;
+    }
+
+    &__img {
+      width: 15px;
+      height: 10px;
+    }
+  }
+
+  .sort {
+    padding-top: 12px;
+    display: flex;
+    gap: 18px;
+
+    &__details {
+      position: relative;
+
+      &[open] .sort__summary .sort__heading {
+        color: $colorSelectSite;
+      }
+
+      &[open] .sort__summary path {
+        fill: $colorSelectSite;
+      }
+    }
+
+    &__check {
+      display: flex;
+      gap: 9px;
+      align-items: center;
+    }
+
+    &__check {
+      color: #6f6e6e;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+    }
+
+    &__summary:hover .sort__heading {
+      color: $colorSelectSite;
+    }
+
+    &__summary:hover path {
+      fill: $colorSelectSite;
+    }
+
+    &__heading {
+      color: #6f6e6e;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 17px;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background: #fff;
+      box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+      padding: 7px 30px 11px 9px;
+      position: absolute;
+      left: -9px;
+      top: 22px;
+      z-index: 1;
+    }
+  }
+}
+
+.vector {
+  // border: 1px solid #EBEBEB;
+  height: 43px;
+  margin-bottom: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__pagination {
+    height: 35px;
+    width: 268px;
+    border: 1px solid #ebebeb;
+  }
+
+  .page-link {
+    color: #c4c4c4;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: none;
+  }
+}
